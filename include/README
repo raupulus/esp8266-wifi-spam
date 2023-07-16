@@ -1,39 +1,20 @@
+# Esp8266 Wifi Spam
 
-This directory is intended for project header files.
+El objetivo de este código es experimentar, practicar con C++ y con el microcontrolador esp8266.
 
-A header file is a file containing C declarations and macro definitions
-to be shared between several project source files. You request the use of a
-header file in your project source file (C, C++, etc) located in `src` folder
-by including it, with the C preprocessing directive `#include'.
+El uso en público de esto puede ser limitado según las normativas de tu zona/país así que entérate dónde y cómo lo usas.
 
-```src/main.c
+Este repositorio está basado en https://github.com/spacehuhn/esp8266_beaconSpam/tree/master
 
-#include "header.h"
+Más información sobre los beacon frame:
+https://mrncciew.com/2014/10/08/802-11-mgmt-beacon-frame/
 
-int main (void)
-{
- ...
-}
-```
+Se ha adaptado el código para separar acciones e integrarlo dentro de platformio.
 
-Including a header file produces the same results as copying the header file
-into each source file that needs it. Such copying would be time-consuming
-and error-prone. With a header file, the related declarations appear
-in only one place. If they need to be changed, they can be changed in one
-place, and programs that include the header file will automatically use the
-new version when next recompiled. The header file eliminates the labor of
-finding and changing all the copies as well as the risk that a failure to
-find one copy will result in inconsistencies within a program.
+Puedes importar el proyecto en platformio y automáticamente se actualizarán las dependencias cuando vayas a compilar el proyecto.
 
-In C, the usual convention is to give header files names that end with `.h'.
-It is most portable to use only letters, digits, dashes, and underscores in
-header file names, and at most one dot.
+En el directorio "includes" tienes las variables y la lista de "ssids" que se generarán.
 
-Read more about using header files in official GCC documentation:
+En mi caso, para completar el proyecto, he preparado un power bank personalizado para integrar una batería y el esp8266 volviéndolo portable y fácil de activar/cargar.
 
-* Include Syntax
-* Include Operation
-* Once-Only Headers
-* Computed Includes
-
-https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html
+¡Haz un uso responsable!
